@@ -7,4 +7,5 @@ public abstract class OperatingSystem {
     }
 
     public abstract Browser getBrowser();
+    public abstract Arch getArch();
 }
