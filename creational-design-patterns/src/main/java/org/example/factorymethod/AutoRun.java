@@ -1,3 +1,5 @@
+package org.example.factorymethod;
+
 public abstract class AutoRun {
 
       public void openSite() {
