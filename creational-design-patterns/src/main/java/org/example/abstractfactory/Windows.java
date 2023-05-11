@@ -5,4 +5,9 @@ public class Windows extends OperatingSystem {
     public Browser getBrowser() {
         return new Chrome();
     }
+    
+    @Override
+    public Arch getArch() {
+        return new X86();
+    }
 }

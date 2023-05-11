@@ -1,9 +1,7 @@
 package org.example.factorymethod;
 
 public abstract class Browser {
-    public abstract boolean isOpenSource();
-
-    public abstract boolean hasPlugins();
+    private void executeJS(){}
 
     public abstract String renderHTML();
 }

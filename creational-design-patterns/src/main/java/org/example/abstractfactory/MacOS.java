@@ -5,4 +5,9 @@ public class MacOS extends OperatingSystem {
     public Browser getBrowser() {
         return new Safari();
     }
+    @Override
+    public Arch getArch() {
+        return new Arm();
+    }
+    
 }
