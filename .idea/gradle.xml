@@ -11,6 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/creational-design-patterns" />
+            <option value="$PROJECT_DIR$/structural-design-patterns" />
           </set>
         </option>
       </GradleProjectSettings>

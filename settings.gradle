@@ -1,3 +1,4 @@
 rootProject.name = 'design-patterns'
 include 'creational-design-patterns'
+include 'structural-design-patterns'
 
