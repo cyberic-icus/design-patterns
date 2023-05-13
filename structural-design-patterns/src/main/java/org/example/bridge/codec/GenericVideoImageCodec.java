@@ -1,4 +1,4 @@
-package org.example.bridge;
+package org.example.bridge.codec;
 
 import javax.imageio.IIOImage;
 import javax.imageio.ImageIO;

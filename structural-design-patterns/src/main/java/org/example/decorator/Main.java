@@ -1,5 +1,10 @@
 package org.example.decorator;
 
+import org.example.decorator.filter.Filter;
+import org.example.decorator.filter.PasswordFilter;
+import org.example.decorator.filter.PermissionFilter;
+import org.example.decorator.filter.TokenDecoderFilter;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;

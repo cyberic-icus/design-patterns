@@ -1,4 +1,6 @@
-package org.example.decorator;
+package org.example.decorator.filter;
+
+import org.example.decorator.Request;
 
 public class PermissionFilter implements Filter {
     public static final String ROLE = "ALLOWED_TO_VIEW";

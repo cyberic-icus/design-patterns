@@ -1,4 +1,4 @@
-package org.example.bridge;
+package org.example.bridge.player;
 
 import java.io.IOException;
 import java.nio.file.Path;

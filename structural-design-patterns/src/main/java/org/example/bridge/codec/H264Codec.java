@@ -1,4 +1,4 @@
-package org.example.bridge;
+package org.example.bridge.codec;
 
 import net.bramp.ffmpeg.FFmpeg;
 import net.bramp.ffmpeg.FFmpegExecutor;

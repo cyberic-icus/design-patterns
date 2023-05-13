@@ -1,4 +1,6 @@
-package org.example.bridge;
+package org.example.bridge.player;
+
+import org.example.bridge.codec.Codec;
 
 import javax.swing.*;
 import java.io.IOException;

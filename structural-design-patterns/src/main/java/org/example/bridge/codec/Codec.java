@@ -1,4 +1,4 @@
-package org.example.bridge;
+package org.example.bridge.codec;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

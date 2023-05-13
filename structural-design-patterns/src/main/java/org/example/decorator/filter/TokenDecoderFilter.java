@@ -1,4 +1,6 @@
-package org.example.decorator;
+package org.example.decorator.filter;
+
+import org.example.decorator.Request;
 
 public class TokenDecoderFilter implements Filter {
     private final Filter nextFilter;
