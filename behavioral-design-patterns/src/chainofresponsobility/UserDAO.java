@@ -1,4 +1,4 @@
-package org.example.decorator;
+package chainofresponsobility;
 
 public class UserDAO {
     public boolean isPasswordCorrect(User user) {

@@ -1,8 +1,5 @@
 package org.example.decorator.filter;
 
-import org.example.decorator.Request;
-import org.example.decorator.UserDAO;
-
 public class PasswordFilter implements Filter {
     private final Filter nextFilter;
 

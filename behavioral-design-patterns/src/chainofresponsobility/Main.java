@@ -1,6 +1,9 @@
-package org.example.decorator;
+package chainofresponsobility;
 
-import org.example.decorator.filter.*;
+import chainofresponsobility.filter.Filter;
+import chainofresponsobility.filter.PasswordFilter;
+import chainofresponsobility.filter.PermissionFilter;
+import chainofresponsobility.filter.TokenDecoderFilter;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -22,15 +25,16 @@ public class Main {
         request.setTime(new Date());
         request.setUser(user);
 
-        Filter filterChain = new TokenDecoderFilter(
-                new PasswordFilter(
-                        new PermissionFilter()
-                )
+        Filter filterChain = Filter.filterChain(
+                new TokenDecoderFilter(),
+                new PasswordFilter(),
+                new PermissionFilter()
         );
-        try {
-            filterChain.doFilter(request);
-        } catch (Exception e) {
-            e.printStackTrace();
+
+        if (filterChain.doFilter(request)) {
+            System.out.println("Signed in succesfully!");
+        } else {
+            System.out.println("Unauthorized access!");
         }
     }
 }

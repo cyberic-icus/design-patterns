@@ -1,20 +1,16 @@
-package org.example.decorator.filter;
+package chainofresponsobility.filter;
 
-public class TokenDecoderFilter implements Filter {
-    private final Filter nextFilter;
+import chainofresponsobility.Request;
 
-    public TokenDecoderFilter(Filter nextFilter) {
-        this.nextFilter = nextFilter;
-    }
+public class TokenDecoderFilter extends Filter {
 
     @Override
-    public void doFilter(Request request) {
+    public boolean doFilter(Request request) {
         if (request.getToken() != null) {
             request.setToken(decode(request.getToken()));
-            nextFilter.doFilter(request);
-        } else {
-            throw new RuntimeException();
+            checkNextFilter(request);
         }
+        return false;
     }
 
     private String decode(String st) {

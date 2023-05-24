@@ -1,4 +1,4 @@
-package org.example.decorator;
+package org.example.decorator.filter;
 
 import java.util.Date;
 

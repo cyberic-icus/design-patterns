@@ -1,4 +1,4 @@
-package org.example.decorator;
+package chainofresponsobility;
 
 import java.util.List;
 
